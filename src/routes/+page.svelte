@@ -32,7 +32,7 @@
     import v5fll from '$lib/assets/images/v5fll.jpg'
     import fllumbc from '$lib/assets/images/fllumbc.jpg'
     import ftcstates from '$lib/assets/images/ftcstates.jpg'
-    import idk from '$lib/assets/images/idk.jpg'
+    import fllmdstates from '$lib/assets/images/fllmdstates.jpg'
     import Footer from '$lib/components/footer.svelte'
     import { flip } from 'svelte/animate';
 	import { fly } from 'svelte/transition';
@@ -237,9 +237,9 @@
             name: "FLL UMBC Competition 2025-2026",
             img: fllumbc,
         },
-        'idk': {
-            name: "Placeholder",
-            img: idk,
+        'fllmdstates': {
+            name: "FLL Maryland States 2026",
+            img: fllmdstates,
         }
     }
     let heroEl: HTMLDivElement | null = $state(null);
@@ -547,6 +547,7 @@
     }
 
     .carousel-row {
+        margin-top: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
